@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  position: relative;
+
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .p1 {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    color: cadetblue;
+    /* width: 60vw; */
+    font-size: 4vw;
+  }
+
+  .p2 {
+    position: absolute;
+    color: lemonchiffon;
+    right: 5%;
+    bottom: 7%;
+    font-size: 4vw;
+  }
+}
+
+.hero-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: cadetblue;
+  opacity: 0.5;
+  border: 1px solid lemonchiffon;
+  border-radius: 5px;
+  padding: 10px;
+  color: lemonchiffon;
+  width: 15vw;
+  font-size: 2vw;
+  /* colc() */
+}
+
+.hero-btn:hover {
+  background-color: lemonchiffon;
+  border: 1px solid cadetblue;
+  color: cadetblue;
+}

@@ -1,0 +1,16 @@
+.positionCorner{
+    position: absolute  ;
+    right: 40px;
+    width: 60vh;
+    height: 36vh;
+    background-color: black;
+    border-radius: 25%;
+}
+.btnColor{
+    background-color:beige;
+    border-color: black;
+}
+.imgSize{
+    width: 200px;
+    height: 200px;
+}
