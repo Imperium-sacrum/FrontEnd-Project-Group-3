@@ -11,7 +11,7 @@ import { ReferencesComponent } from './references/references.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { ExtraComponent } from './extra/extra.component';
-import { Portafolio1Component } from './portafolio1/portafolio1.component';
+import { Portafolio1Component } from './portafolio-1/portafolio-1.component';
 import { Portafolio2Component } from './portafolio-2/portafolio-2.component';
 import { Portafolio3Component } from './portafolio-3/portafolio-3.component';
 
