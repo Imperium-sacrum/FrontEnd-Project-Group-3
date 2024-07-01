@@ -11,6 +11,9 @@ import { ReferencesComponent } from './references/references.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { ExtraComponent } from './extra/extra.component';
+import { Portafolio1Component } from './portafolio1/portafolio1.component';
+import { Portafolio2Component } from './portafolio-2/portafolio-2.component';
+import { Portafolio3Component } from './portafolio-3/portafolio-3.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { ExtraComponent } from './extra/extra.component';
     ReferencesComponent,
     ContactComponent,
     FooterComponent,
-    ExtraComponent
+    ExtraComponent,
+    Portafolio1Component,
+    Portafolio2Component,
+    Portafolio3Component
   ],
   imports: [
     BrowserModule,
