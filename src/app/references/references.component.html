@@ -23,15 +23,13 @@
 
 <!-- section header of this page -->
 <div class="border bg-secondary text-white">
-  <div class="border p-5">
-    <h3 class="text-center">
-      My Awards and My clients Reviews
-      <hr />
-      <h6>
-        Here you will find the awards I have won throughout my career and the
-        reviews left by clients I have worked with.
-      </h6>
-    </h3>
+  <div class="border p-5 text-center">
+    <h3 class="text-center">My Awards and My clients Reviews</h3>
+    <hr />
+    <h6>
+      Here you will find the awards I have won throughout my career and the
+      reviews left by clients I have worked with.
+    </h6>
   </div>
 </div>
 <!-- section header of this page ends -->
@@ -68,7 +66,9 @@
 <div class="bg-secondary text-white">
   <div class="container">
     <div class="border d-flex">
-      <img src="./images/award1.jpg" alt="" class="w-50 px-2" />
+      <span data-tilt
+        ><img src="./images/award1.jpg" alt="" class="w-50 px-2"
+      /></span>
       <div class="px-2 text-center border">
         <h3>Award 2022</h3>
         <h6>Francia,Mont Blanc</h6>
@@ -82,7 +82,7 @@
 <!-- section first award ends -->
 
 <!-- section second award -->
-<div class="bg-white text-black">
+<div class="bg-black text-white">
   <div class="container">
     <div class="border d-flex">
       <div class="px-2 text-center border">
@@ -92,7 +92,22 @@
         <h6></h6>
         <h6></h6>
       </div>
-      <img src="./images/award2.jpg" alt="" class="w-50 px-2" />
+      <img data-tilt src="./images/award2.jpg" alt="" class="w-50 px-2" />
+    </div>
+  </div>
+</div>
+<!-- section second award ends-->
+
+<div class="border bg-secondary">
+  <div class="border p-5 d-flex justify-content-between">
+    <h3>Clients Reviews</h3>
+    <div>
+      <button class="btn bg-white mx-1">
+        <i class="fa-solid fa-filter"></i>Filter
+      </button>
+      <button class="btn btn-danger mx-1">
+        <i class="fa-solid fa-plus"></i> add Review
+      </button>
     </div>
   </div>
 </div>
