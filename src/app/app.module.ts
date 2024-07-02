@@ -13,6 +13,7 @@ import { ExtraComponent } from './extra/extra.component';
 import { Portafolio1Component } from './portafolio-1/portafolio-1.component';
 import { Portafolio2Component } from './portafolio-2/portafolio-2.component';
 import { Portafolio3Component } from './portafolio-3/portafolio-3.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { Portafolio3Component } from './portafolio-3/portafolio-3.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
