@@ -14,9 +14,9 @@
 
   .p1 {
     position: absolute;
-    top: 5%;
-    left: 5%;
-    color: cadetblue;
+    top: 1%;
+    left: 4%;
+    color: firebrick;
     /* width: 60vw; */
     font-size: 4vw;
   }
