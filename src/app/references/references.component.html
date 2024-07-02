@@ -98,16 +98,196 @@
 </div>
 <!-- section second award ends-->
 
+<!-- div with the btn filter and add -->
 <div class="border bg-secondary">
   <div class="border p-5 d-flex justify-content-between">
     <h3>Clients Reviews</h3>
     <div>
       <button class="btn bg-white mx-1">
-        <i class="fa-solid fa-filter"></i>Filter
+        <i class="fa-solid fa-filter"></i> Filter
       </button>
-      <button class="btn btn-danger mx-1">
+      <button
+        class="btn btn-danger mx-1"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
         <i class="fa-solid fa-plus"></i> add Review
       </button>
     </div>
   </div>
+  <!-- div with the btn filter and add ends -->
+
+  <!-- Modal -->
+  <div
+    class="modal fade"
+    id="exampleModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <!-- formulad for add new comments -->
+        <div>
+          <form [formGroup]="info" (ngSubmit)="addReviews()">
+            <div class="container border border-2 border-black p-5">
+              <div class="input-group input-group-lg py-5">
+                <span class="input-group-text" id="inputGroup-sizing-lg"
+                  >User or Client Name</span
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-lg"
+                  placeholder="Enter your Name..."
+                  formControlName="client"
+                />
+              </div>
+
+              <div
+                *ngIf="
+                  info.controls.client.invalid &&
+                  (info.controls.client.dirty || info.controls.client.touched)
+                "
+                class="alert"
+              >
+                <!-- <div *ngIf="info.controls.client.hasError('required')">
+                  Name is required.
+                </div> -->
+              </div>
+              <div class="d-flex">
+                <div class="input-group input-group-lg">
+                  <span class="input-group-text" id="inputGroup-sizing-lg"
+                    >Date</span
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-lg"
+                    placeholder="Enter the Date..."
+                    formControlName="date"
+                  />
+                </div>
+                <div class="input-group input-group-lg">
+                  <span class="input-group-text" id="inputGroup-sizing-lg"
+                    >location</span
+                  >
+                  <input
+                    type="string"
+                    class="form-control"
+                    aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-lg"
+                    placeholder="Enter your location..."
+                    formControlName="location"
+                  />
+                </div>
+                <div *ngIf="info.controls.date.hasError('minlength')">
+                  Name must be at least 8 characters long.
+                </div>
+              </div>
+              <div class="input-group input-group-lg py-5">
+                <span class="input-group-text" id="inputGroup-sizing-lg"
+                  >Image of the Client or User</span
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-lg"
+                  placeholder="Enter The Image..."
+                  formControlName="img"
+                />
+              </div>
+              <div class="input-group input-group-lg py-5">
+                <span class="input-group-text" id="inputGroup-sizing-lg"
+                  >Image of the Client or User</span
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-lg"
+                  placeholder="Enter The Image..."
+                  formControlName="reviews"
+                />
+              </div>
+            </div>
+
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-primary">Add Comment</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- formulad for add new comments ends-->
+
+  <!-- Modal ends -->
+
+  <!-- comments section for clients -->
+
+  <section style="background-color: black">
+    <div class="container py-5">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-12 col-lg-10">
+          <div class="card text-body">
+            <div
+              class="card-body p-4 text-white"
+              style="background-color: rgba(7, 7, 7, 0.845)"
+            >
+              <h4 class="mb-0">Recent comments</h4>
+              <p class="fw-light mb-4 pb-2">
+                Latest Comments section by users and Clients
+              </p>
+              @for (val of commentsReferences ; track $index) {
+              <div class="d-flex flex-start py-2">
+                <img
+                  class="rounded-circle border shadow-1-strong me-3"
+                  src="./images/{{ val.img }}"
+                  alt="avatar"
+                  width="60"
+                  height="60"
+                />
+                <div>
+                  <h6 class="fw-bold mb-1">{{ val.client }}</h6>
+                  <div class="d-flex align-items-center mb-3">
+                    <p class="mb-0">
+                      {{ val.date }}
+                      @if (val.notclient == true) {
+                      <span class="badge bg-primary">Client</span>} @else {
+                      <span class="badge bg-primary">User</span>}
+                    </p>
+                  </div>
+                  <div class="mb-1">
+                    <p>
+                      <span class="h6">location:</span>
+                      {{ val.location }}
+                    </p>
+                  </div>
+                  <p class="mb-0">
+                    {{ val.reviews }}
+                  </p>
+                </div>
+              </div>
+              <hr class="my-0" />
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- comments section for clients ends-->
 </div>

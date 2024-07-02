@@ -14,16 +14,15 @@
 
   .p1 {
     position: absolute;
-    top: 5%;
-    left: 5%;
-    color: cadetblue;
-    /* width: 60vw; */
+    top: 1%;
+    left: 4%;
+    color: firebrick;
     font-size: 4vw;
   }
 
   .p2 {
     position: absolute;
-    color: lemonchiffon;
+    color: white;
     right: 5%;
     bottom: 7%;
     font-size: 4vw;
@@ -31,6 +30,38 @@
 }
 
 .hero-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  background-color: white;
+  opacity: 0.8;
+  border: 1px solid black;
+
+  border-radius: 10px;
+  padding: 10px;
+  color: black;
+  width: 15vw;
+  font-size: 2vw;
+}
+
+.hero-btn:hover {
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+}
+
+.home-intro {
+  text-align: center;
+  color: black;
+}
+
+.gallery {
+  width: 100%;
+  /* margin: 0 20px; */
+}
+
+/* .hero-btn {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -43,11 +74,10 @@
   color: lemonchiffon;
   width: 15vw;
   font-size: 2vw;
-  /* colc() */
 }
 
 .hero-btn:hover {
   background-color: lemonchiffon;
   border: 1px solid cadetblue;
   color: cadetblue;
-}
+} */
