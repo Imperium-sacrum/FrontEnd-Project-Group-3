@@ -13,14 +13,69 @@
   </p>
 </div> -->
 
+<!--//////////////////////////////////////////////////////////////////////////////////////////-->
 <!--new version-->
 <div class="hero container-fluid">
+  @if(imgPath != ""){
+  <app-modal
+    (onModalCLosed)="onModalWasClosed()"
+    [imgPath]="imgPath"
+  ></app-modal>
+
+  }
+
   <img src="images/hero_b_w_people.jpg" alt="" />
   <p class="p1 animate__animated animate__slideInLeft">
     Make photography an Art
   </p>
-  <button class="hero-btn"><a href="#"></a>Contact me</button>
+  <button class="hero-btn animate__animated animate__pulse">
+    <a href="#"></a>Contact me
+  </button>
   <p class="p2 animate__animated animate__slideInRight">
     Expand your imagination
   </p>
 </div>
+<!--text statement-->
+<div class="container my-4 mx-auto">
+  <h2 class="home-intro">Do not take pictures - Shape reality!</h2>
+</div>
+<!--image gallery-->
+<div class="container mx-auto row row-cols-3 row-cols-md-6 mb-4 p-3">
+  <div class="gallery-div p-1">
+    <a (click)="onClickImg('images/photography_equipment.jpg')"
+      ><img src="images/photography_equipment.jpg" alt="" class="gallery"
+    /></a>
+  </div>
+  <div class="gallery-div p-1">
+    <a (click)="onClickImg('images/photographer-shilouetten.jpg')"
+      ><img src="images/photographer-shilouetten.jpg" alt="" class="gallery"
+    /></a>
+  </div>
+  <div class="gallery-div p-1">
+    <a (click)="onClickImg('images/photographer-cliff.jpg')"
+      ><img src="images/photographer-cliff.jpg" alt="" class="gallery"
+    /></a>
+  </div>
+  <div class="gallery-div p-1">
+    <a (click)="onClickImg('images/photography_oldwoman.jpg')"
+      ><img src="images/photography_oldwoman.jpg" alt="" class="gallery"
+    /></a>
+  </div>
+  <div class="gallery-div p-1">
+    <a (click)="onClickImg('images/photography_borealis.jpg')"
+      ><img src="images/photography_borealis.jpg" alt="" class="gallery"
+    /></a>
+  </div>
+  <div class="gallery-div p-1">
+    <a (click)="onClickImg('images/photography-pictures.jpg')"
+      ><img src="images/photography-pictures.jpg" alt="" class="gallery"
+    /></a>
+  </div>
+</div>
+<!--end of image gallery-->
+
+<!--modal container-->
+<div id="modal-container" class="p-2">
+  <!--render modal content-->
+</div>
+<!--end of modal container-->
