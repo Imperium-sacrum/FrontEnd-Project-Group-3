@@ -16,6 +16,14 @@
 <!--//////////////////////////////////////////////////////////////////////////////////////////-->
 <!--new version-->
 <div class="hero container-fluid">
+  @if(imgPath != ""){
+  <app-modal
+    (onModalCLosed)="onModalWasClosed()"
+    [imgPath]="imgPath"
+  ></app-modal>
+
+  }
+
   <img src="images/hero_b_w_people.jpg" alt="" />
   <p class="p1 animate__animated animate__slideInLeft">
     Make photography an Art
@@ -29,40 +37,45 @@
 </div>
 <!--text statement-->
 <div class="container my-4 mx-auto">
-  <h2 class="home-intro">I do not take pictures - I shape reality!</h2>
+  <h2 class="home-intro">Do not take pictures - Shape reality!</h2>
 </div>
 <!--image gallery-->
 <div class="container mx-auto row row-cols-3 row-cols-md-6 mb-4 p-3">
   <div class="gallery-div p-1">
-    <a href="images/photography_equipment.jpg" target="_blank"
+    <a (click)="onClickImg('images/photography_equipment.jpg')"
       ><img src="images/photography_equipment.jpg" alt="" class="gallery"
     /></a>
   </div>
   <div class="gallery-div p-1">
-    <a href="images/photographer-shilouetten.jpg" target="_blank"
+    <a (click)="onClickImg('images/photographer-shilouetten.jpg')"
       ><img src="images/photographer-shilouetten.jpg" alt="" class="gallery"
     /></a>
   </div>
   <div class="gallery-div p-1">
-    <a href="images/photographer-cliff.jpg" target="_blank"
+    <a (click)="onClickImg('images/photographer-cliff.jpg')"
       ><img src="images/photographer-cliff.jpg" alt="" class="gallery"
     /></a>
   </div>
   <div class="gallery-div p-1">
-    <a href="images/photography_oldwoman.jpg" target="_blank"
+    <a (click)="onClickImg('images/photography_oldwoman.jpg')"
       ><img src="images/photography_oldwoman.jpg" alt="" class="gallery"
     /></a>
   </div>
   <div class="gallery-div p-1">
-    <a href="images/photography_borealis.jpg" target="_blank"
+    <a (click)="onClickImg('images/photography_borealis.jpg')"
       ><img src="images/photography_borealis.jpg" alt="" class="gallery"
     /></a>
   </div>
   <div class="gallery-div p-1">
-    <a href="images/photography-pictures.jpg" target="_blank"
+    <a (click)="onClickImg('images/photography-pictures.jpg')"
       ><img src="images/photography-pictures.jpg" alt="" class="gallery"
     /></a>
   </div>
-
-  <!--end of image gallery-->
 </div>
+<!--end of image gallery-->
+
+<!--modal container-->
+<div id="modal-container" class="p-2">
+  <!--render modal content-->
+</div>
+<!--end of modal container-->
