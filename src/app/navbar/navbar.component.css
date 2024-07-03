@@ -1,11 +1,24 @@
 .navbar {
-  background-image: url('/images/navbar-bg.jpg');
+  /* background-image: url('/images/camera.png'); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  background-color: #0e0f0f;
+  padding-top: 15px;
+  padding-bottom: 15px;
   transition: all 0.3s ease;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbarSupportedContent{
+  align-content: end;
+  margin-left: 250px;
+}
+
+.cam{
+  border-bottom: 1px solid #efc805;
+  margin-left: 20px;
+
 }
 
 .navbar-nav .nav-link {
@@ -20,7 +33,7 @@
   content: '';
   position: absolute;
   width: 0;
-  height: 2px;
+  height: 1px;
   display: block;
   margin-top: 5px;
   right: 0;
@@ -40,7 +53,7 @@
 }
 
 .dropdown-menu {
-  background-color: rgb(161, 158, 10);
+  background-color: rgb(14, 13, 13);
   border: none;
   border-radius: 0;
   transition: background-color 0.3s ease;
@@ -52,7 +65,7 @@
 }
 
 .dropdown-item:hover {
-  background-color: #6c757d;
+  background-color: gold;
 }
 
 .navbar-brand img {
