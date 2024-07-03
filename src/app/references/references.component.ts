@@ -29,12 +29,14 @@ constructor(){
     console.log(this.info.value);
     let newComment:any= this.info.value
     this.commentsReferences.push(newComment)
+    this.toLocalStorage(this.commentsReferences);
+    // this.getFromLocalStorage()
     }
       // method to add the formulad to the arry of objs ends
 
     // ngOnInit with all the function for References
     ngOnInit(): void {
-  
+
       if(this.getFromLocalStorage()){
        this.commentsReferences = this.getFromLocalStorage()
       }
@@ -52,7 +54,7 @@ constructor(){
   }
 
   getFromLocalStorage(): modelReviews[]{
-  
+      
       let retObj = JSON.parse(localStorage.getItem("clientReviews") || '""') 
       return retObj
   

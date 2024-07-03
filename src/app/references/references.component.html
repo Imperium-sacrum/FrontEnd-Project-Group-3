@@ -22,21 +22,28 @@
 </div> -->
 
 <!-- section header of this page -->
-<div class="border bg-secondary text-white">
-  <div class="border p-5 text-center">
-    <h3 class="text-center">My Awards and My clients Reviews</h3>
+<div class="text-white bgImg">
+  <div class="p-5 text-center">
+    <h1 class="text-center">
+      <i class="fa-solid fa-trophy"></i> Winner of the Vienna Photo Awards
+      <i class="fa-solid fa-trophy"></i>
+      <br />
+      2022 and 2023
+    </h1>
     <hr />
-    <h6>
-      Here you will find the awards I have won throughout my career and the
-      reviews left by clients I have worked with.
-    </h6>
+    <div class="container">
+      <h6>
+        Here you will find the awards I have won throughout my career and the
+        reviews left by clients I have worked with.
+      </h6>
+    </div>
   </div>
 </div>
 <!-- section header of this page ends -->
 
 <!-- section shows the awards -->
 
-<div class="d-flex py-3 justify-content-around text-center">
+<!-- <div class="d-flex py-3 justify-content-around text-center">
   <div class="border px-4">
     <img src="./images/award1.jpg" alt="" class="rounded-circle imgSize" />
     <h5>Award 2022</h5>
@@ -58,49 +65,61 @@
       <i class="fa-solid fa-angles-down"></i>
     </button>
   </div>
-</div>
+</div> -->
 
 <!-- section shows the awards ends -->
 
 <!-- section first award -->
-<div class="bg-secondary text-white">
+<div class="bg-black text-white py-5">
   <div class="container">
-    <div class="border d-flex">
-      <span data-tilt
-        ><img src="./images/award1.jpg" alt="" class="w-50 px-2"
-      /></span>
-      <div class="px-2 text-center border">
-        <h3>Award 2022</h3>
-        <h6>Francia,Mont Blanc</h6>
-        <h6></h6>
-        <h6></h6>
-        <h6></h6>
+    <div class="">
+      <div class="text-left px-4 py-3">
+        <h1 class="py-1"><i class="fa-solid fa-trophy"></i> Award 2022</h1>
+        <h5 class="py-1">Slovenia</h5>
+        <h3 class="py-1">The Winner - Best Art Fotography</h3>
+        <h6 class="py-1">
+          WMPO TROPHY GOLD - 1. Place: - Slovenia - textures 01
+        </h6>
       </div>
+
+      <span data-tilt
+        ><img src="./images/award1.jpg" alt="" class="w-100"
+      /></span>
+      <small class="text-secondary p-1">
+        WMPO TROPHY GOLD - 1. Place: Andreja Ravnak - Slovenia - textures 01
+      </small>
     </div>
   </div>
 </div>
 <!-- section first award ends -->
-
+<div class="borderBottom"></div>
 <!-- section second award -->
-<div class="bg-black text-white">
+<div class="bg-black text-white py-5">
   <div class="container">
-    <div class="border d-flex">
-      <div class="px-2 text-center border">
-        <h3>Award 2023</h3>
-        <h6>Francia, BROCELIANDE</h6>
-        <h6></h6>
-        <h6></h6>
-        <h6></h6>
+    <div class="">
+      <div class="text-left px-4 py-3">
+        <h1 class="py-1"><i class="fa-solid fa-trophy"></i> Award 2023</h1>
+        <h5 class="py-1">Peru</h5>
+        <h3 class="py-1">The Winner - Best Art Fotography</h3>
+        <h6 class="py-1">
+          WMPO TROPHY GOLD - 1. Place: - Peru - The little shepherd
+        </h6>
       </div>
-      <img data-tilt src="./images/award2.jpg" alt="" class="w-50 px-2" />
+
+      <span data-tilt
+        ><img src="./images/award2.jpg" alt="" class="w-100"
+      /></span>
+      <small class="text-secondary p-1">
+        WMPO TROPHY GOLD - 1. Place: - Peru - The little shepherd
+      </small>
     </div>
   </div>
 </div>
 <!-- section second award ends-->
 
 <!-- div with the btn filter and add -->
-<div class="border bg-secondary">
-  <div class="border p-5 d-flex justify-content-between">
+<div class="bg-dark">
+  <div class="p-5 d-flex justify-content-between text-white">
     <h3>Clients Reviews</h3>
     <div>
       <button class="btn bg-white mx-1">
@@ -125,13 +144,12 @@
     aria-labelledby="exampleModalLabel"
     aria-hidden="true"
   >
-    <div class="modal-dialog">
-      <div class="modal-content">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content bg-dark">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
           <button
             type="button"
-            class="btn-close"
+            class="btn-close btn btn-danger bg-danger"
             data-bs-dismiss="modal"
             aria-label="Close"
           ></button>
@@ -139,11 +157,14 @@
         <!-- formulad for add new comments -->
         <div>
           <form [formGroup]="info" (ngSubmit)="addReviews()">
-            <div class="container border border-2 border-black p-5">
-              <div class="input-group input-group-lg py-5">
-                <span class="input-group-text" id="inputGroup-sizing-lg"
-                  >User or Client Name</span
+            <div class="container border border-2 border-black py-1">
+              <!--  client text -->
+              <div class="input-group input-group-lg py-1">
+                <span class="text-white" id="inputGroup-sizing-lg"
+                  >Client or User:</span
                 >
+              </div>
+              <div>
                 <input
                   type="text"
                   class="form-control"
@@ -154,52 +175,48 @@
                 />
               </div>
 
-              <div
-                *ngIf="
-                  info.controls.client.invalid &&
-                  (info.controls.client.dirty || info.controls.client.touched)
-                "
-                class="alert"
-              >
-                <!-- <div *ngIf="info.controls.client.hasError('required')">
-                  Name is required.
-                </div> -->
+              <!--  Date text -->
+              <div class="input-group input-group-lg py-1">
+                <span class="text-white" id="inputGroup-sizing-lg">Date:</span>
               </div>
-              <div class="d-flex">
-                <div class="input-group input-group-lg">
-                  <span class="input-group-text" id="inputGroup-sizing-lg"
-                    >Date</span
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    aria-label="Sizing example input"
-                    aria-describedby="inputGroup-sizing-lg"
-                    placeholder="Enter the Date..."
-                    formControlName="date"
-                  />
-                </div>
-                <div class="input-group input-group-lg">
-                  <span class="input-group-text" id="inputGroup-sizing-lg"
-                    >location</span
-                  >
-                  <input
-                    type="string"
-                    class="form-control"
-                    aria-label="Sizing example input"
-                    aria-describedby="inputGroup-sizing-lg"
-                    placeholder="Enter your location..."
-                    formControlName="location"
-                  />
-                </div>
-                <div *ngIf="info.controls.date.hasError('minlength')">
-                  Name must be at least 8 characters long.
-                </div>
+              <div>
+                <input
+                  class="form-control"
+                  type="date"
+                  id="start"
+                  name="trip-start"
+                  value="2024-07-02"
+                  min="2024-01-01"
+                  max="2050-12-12"
+                  formControlName="date"
+                  placeholder="Enter the Date..."
+                />
               </div>
-              <div class="input-group input-group-lg py-5">
-                <span class="input-group-text" id="inputGroup-sizing-lg"
-                  >Image of the Client or User</span
+
+              <!--  location text -->
+              <div class="input-group input-group-lg py-1">
+                <span class="text-white" id="inputGroup-sizing-lg"
+                  >location:</span
                 >
+              </div>
+              <div>
+                <input
+                  type="string"
+                  class="form-control"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-lg"
+                  placeholder="Enter your location..."
+                  formControlName="location"
+                />
+              </div>
+
+              <!--  Image text -->
+              <div class="input-group input-group-lg py-1">
+                <span class="text-white" id="inputGroup-sizing-lg"
+                  >Images:</span
+                >
+              </div>
+              <div>
                 <input
                   type="text"
                   class="form-control"
@@ -209,23 +226,33 @@
                   formControlName="img"
                 />
               </div>
-              <div class="input-group input-group-lg py-5">
-                <span class="input-group-text" id="inputGroup-sizing-lg"
-                  >Image of the Client or User</span
+
+              <!-- reviews text -->
+              <div class="mb-3">
+                <label
+                  for="message-text"
+                  class="col-form-label text-white border border-1 rounded-pill p-1 my-1"
+                  >Message:</label
                 >
-                <input
-                  type="text"
+                <textarea
                   class="form-control"
-                  aria-label="Sizing example input"
-                  aria-describedby="inputGroup-sizing-lg"
-                  placeholder="Enter The Image..."
                   formControlName="reviews"
-                />
+                  id="message-text"
+                  placeholder="write your comment..."
+                  rows="10"
+                ></textarea>
               </div>
             </div>
 
+            <!-- btn to add to the array -->
             <div class="modal-footer">
-              <button type="submit" class="btn btn-primary">Add Comment</button>
+              <button
+                data-bs-dismiss="modal"
+                type="submit"
+                class="btn btn-primary close"
+              >
+                Add Comment
+              </button>
             </div>
           </form>
         </div>
@@ -283,6 +310,9 @@
               </div>
               <hr class="my-0" />
               }
+              <div class="d-flex justify-content-center my-3">
+                <a class="btn bg-dark-subtle">Load More</a>
+              </div>
             </div>
           </div>
         </div>
