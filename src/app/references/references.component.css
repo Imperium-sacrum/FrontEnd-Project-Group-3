@@ -14,3 +14,19 @@
     width: 200px;
     height: 200px;
 }
+
+/* background for the titel img and style to */
+.bgImg{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.593), rgba(26, 2, 2, 0.686)),
+    url(http://localhost:4200/images/award1.jpg);
+    border-bottom-style:ridge;
+}
+
+.borderBottom{
+    border-bottom-style:solid;
+    margin-left: 40vh;
+    margin-right: 40vh;
+    background-color: white;
+}
