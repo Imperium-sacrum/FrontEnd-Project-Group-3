@@ -1,11 +1,13 @@
 .contact-page {
-  display: flex;
-  justify-content: flex-start;
+  /* display: flex;
+  justify-content: space-around; */
+  display: block;
   align-items: center;
   background: url('/images/contactform.jpg') no-repeat center center;
   background-size: cover;
-  height: 100vh;
-  padding: 200px;
+  /* height: 80vh; */
+  padding: 10px;
+
   box-sizing: border-box;
 }
 
@@ -14,8 +16,10 @@
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(155, 140, 4, 0.895);
-  width: 40%;
+  width: 100%;
 }
+
+
 
 .contact-form h2 {
   margin-bottom: 20px;

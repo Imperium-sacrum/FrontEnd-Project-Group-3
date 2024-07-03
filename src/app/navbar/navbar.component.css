@@ -12,7 +12,9 @@
 
 #navbarSupportedContent{
   align-content: end;
-  margin-left: 250px;
+  margin-left: 80px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .cam{
