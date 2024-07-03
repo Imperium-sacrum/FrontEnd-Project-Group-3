@@ -1,12 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .contact-page {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background: url('/images/contactform.jpg') no-repeat center center;
+  background: url("/images/contactform.jpg") no-repeat center center;
   background-size: cover;
-  height: 100vh;
-  padding: 200px;
-  box-sizing: border-box;
 }
 
 .contact-form {
@@ -14,7 +17,9 @@
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 30%;
+
+  margin: 4vw 4vw 4vw 20vw;
+  /* margin-left: 20vw; */
 }
 
 .contact-form h2 {
@@ -64,4 +69,12 @@
 
 .submit-button:hover {
   background: #ffd700;
+}
+
+@media screen and (width < 576px) {
+  .contact-form {
+    width: 90%;
+
+    margin: 20px auto;
+  }
 }
