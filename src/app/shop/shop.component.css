@@ -25,3 +25,9 @@
 .mb-4 {
   margin-bottom: 1rem !important;
 }
+
+.borderTopBottom{
+  border-top: 1px white solid;
+  border-bottom: 1px white solid;
+  background-image: linear-gradient(rgb(0, 0, 0), rgb(10, 5, 36))
+}
