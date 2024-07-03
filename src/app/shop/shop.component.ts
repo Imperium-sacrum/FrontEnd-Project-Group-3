@@ -3,6 +3,7 @@ import { IProducts } from '../iproducts';
 import { products } from './../product';
 import { Component } from '@angular/core';
 import { CartService } from '../service/cart.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-shop',
@@ -21,9 +22,13 @@ export class ShopComponent {
  
   addToCart(producto:IProducts){
    this.CS.addToCart(producto)
+   Swal.fire({
+    position: "center",
+    icon: "success",
+    title: "Added to cart",
+    showConfirmButton: false,
+    timer: 1200
+  });
+  }
  }
- addToCard2(producto:any){
-   this.CS.addToCart(producto);
-   
- }
- }
+ 
