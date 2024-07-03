@@ -20,7 +20,6 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
   margin: 4vw 4vw 4vw 20vw;
-  /* margin-left: 20vw; */
 }
 
 .contact-form h2 {
@@ -75,7 +74,6 @@
 @media screen and (width < 576px) {
   .contact-form {
     width: 90%;
-
     margin: 20px auto;
   }
 }
