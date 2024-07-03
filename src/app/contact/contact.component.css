@@ -5,32 +5,27 @@
 }
 
 .contact-page {
-  /* display: flex;
-  justify-content: space-around; */
-  display: block;
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
   background: url("/images/contactform.jpg") no-repeat center center;
   background-size: cover;
 }
-
 .contact-form {
   background: rgba(0, 0, 0, 0.667);
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(155, 140, 4, 0.895);
 
   margin: 4vw 4vw 4vw 20vw;
 }
-
 .contact-form h2 {
   margin-bottom: 20px;
   color: gold;
 }
-
 .form-group {
   margin-bottom: 15px;
 }
-
 .form-group label {
   display: flex;
   align-items: center;
@@ -38,11 +33,9 @@
   margin-bottom: 5px;
   color: gold;
 }
-
 .form-group label i {
   margin-right: 10px;
 }
-
 .form-group input,
 .form-group textarea {
   width: 100%;
@@ -52,7 +45,6 @@
   background: #333;
   color: white;
 }
-
 .submit-button {
   background: gold;
   color: black;
@@ -62,11 +54,9 @@
   cursor: pointer;
   font-size: 16px;
 }
-
 .submit-button i {
   margin-right: 10px;
 }
-
 .submit-button:hover {
   background: #ffd700;
 }
