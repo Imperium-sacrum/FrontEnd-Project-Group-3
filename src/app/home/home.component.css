@@ -54,11 +54,18 @@
 .home-intro {
   text-align: center;
   color: black;
+  margin: 15px auto;
 }
 
 .gallery {
   width: 100%;
   /* margin: 0 20px; */
+}
+
+.text {
+  /* background-image: url("/images/home-background50.png"); */
+
+  background-image: linear-gradient(gray, black);
 }
 
 /* .hero-btn {
