@@ -1,0 +1,28 @@
+<section>
+  <div class="container my-5">
+    <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 row-cols-1 justify-content-center">
+      @for (val of products; track $index; let i = $index) {
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow-sm border-1" style="width: 18rem;">
+            <img class="card-img-top" [src]="val.image" alt="{{ val.name }}">
+            <div class="card-body">
+              <h5 class="card-title text-primary">{{ val.name }}</h5>
+              <hr>
+              <p class="card-text">{{ val.price | currency:'EUR' }}</p>
+              <div *ngIf="val.available; else notAvailable">
+                <a class="btn btn-primary" routerLink="/details/{{ i }}">
+                  <i class="fas fa-info-circle"></i> Details
+                </a>
+              </div>
+              <ng-template #notAvailable>
+                <p class="text-danger">Not Available</p>
+              </ng-template>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+

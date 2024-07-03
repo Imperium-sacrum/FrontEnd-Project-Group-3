@@ -75,7 +75,7 @@
     <div class="">
       <div class="text-left px-4 py-3">
         <h1 class="py-1"><i class="fa-solid fa-trophy"></i> Award 2022</h1>
-        <h5 class="py-1">Slovenia</h5>
+        <h5 class="py-1">Location: Slovenia</h5>
         <h3 class="py-1">The Winner - Best Art Fotography</h3>
         <h6 class="py-1">
           WMPO TROPHY GOLD - 1. Place: - Slovenia - textures 01
@@ -99,7 +99,7 @@
     <div class="">
       <div class="text-left px-4 py-3">
         <h1 class="py-1"><i class="fa-solid fa-trophy"></i> Award 2023</h1>
-        <h5 class="py-1">Peru</h5>
+        <h5 class="py-1">Location: Peru</h5>
         <h3 class="py-1">The Winner - Best Art Fotography</h3>
         <h6 class="py-1">
           WMPO TROPHY GOLD - 1. Place: - Peru - The little shepherd
@@ -185,9 +185,6 @@
                   type="date"
                   id="start"
                   name="trip-start"
-                  value="2024-07-02"
-                  min="2024-01-01"
-                  max="2050-12-12"
                   formControlName="date"
                   placeholder="Enter the Date..."
                 />
@@ -209,23 +206,12 @@
                   formControlName="location"
                 />
               </div>
-
-              <!--  Image text -->
-              <div class="input-group input-group-lg py-1">
+              <!-- Image text -->
+              <!-- <div class="input-group input-group-lg py-1">
                 <span class="text-white" id="inputGroup-sizing-lg"
                   >Images:</span
                 >
-              </div>
-              <div>
-                <input
-                  type="text"
-                  class="form-control"
-                  aria-label="Sizing example input"
-                  aria-describedby="inputGroup-sizing-lg"
-                  placeholder="Enter The Image..."
-                  formControlName="img"
-                />
-              </div>
+              </div> -->
 
               <!-- reviews text -->
               <div class="mb-3">
@@ -264,7 +250,6 @@
   <!-- Modal ends -->
 
   <!-- comments section for clients -->
-
   <section style="background-color: black">
     <div class="container py-5">
       <div class="row d-flex justify-content-center">
@@ -280,6 +265,7 @@
               </p>
               @for (val of commentsReferences ; track $index) {
               <div class="d-flex flex-start py-2">
+                <!-- images of the client or User -->
                 <img
                   class="rounded-circle border shadow-1-strong me-3"
                   src="./images/{{ val.img }}"
@@ -288,10 +274,11 @@
                   height="60"
                 />
                 <div>
+                  <!-- name of the client or user -->
                   <h6 class="fw-bold mb-1">{{ val.client }}</h6>
                   <div class="d-flex align-items-center mb-3">
                     <p class="mb-0">
-                      {{ val.date }}
+                      Date: {{ val.date }}
                       @if (val.notclient == true) {
                       <span class="badge bg-primary">Client</span>} @else {
                       <span class="badge bg-primary">User</span>}

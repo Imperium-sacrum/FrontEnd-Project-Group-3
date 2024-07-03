@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Portafolio1Component } from './portafolio-1.component';
+import { CartBadgeComponent } from './cart-badge.component';
 
-describe('Portafolio1Component', () => {
-  let component: Portafolio1Component;
-  let fixture: ComponentFixture<Portafolio1Component>;
+describe('CartBadgeComponent', () => {
+  let component: CartBadgeComponent;
+  let fixture: ComponentFixture<CartBadgeComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [Portafolio1Component]
+      declarations: [CartBadgeComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Portafolio1Component);
+    fixture = TestBed.createComponent(CartBadgeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -21,5 +21,3 @@ describe('Portafolio1Component', () => {
     expect(component).toBeTruthy();
   });
 });
-
-

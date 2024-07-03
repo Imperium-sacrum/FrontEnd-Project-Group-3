@@ -5,8 +5,9 @@
 }
 
 .contact-page {
-  display: flex;
-  justify-content: flex-start;
+  /* display: flex;
+  justify-content: space-around; */
+  display: block;
   align-items: center;
   background: url("/images/contactform.jpg") no-repeat center center;
   background-size: cover;
