@@ -1,28 +1,59 @@
-<section>
-  <div class="container my-5">
-    <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 row-cols-1 justify-content-center">
+<section class="py-5 borderTopBottom">
+  <div class="container">
+    <div
+      class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 row-cols-1 justify-content-center"
+    >
       @for (val of products; track $index; let i = $index) {
-        <div class="col d-flex justify-content-center mb-4">
-          <div class="card shadow-sm border-1" style="width: 18rem;">
-            <img class="card-img-top" [src]="val.image" alt="{{ val.name }}">
-            <div class="card-body">
-              <h5 class="card-title text-primary">{{ val.name }}</h5>
-              <hr>
-              <p class="card-text">{{ val.price | currency:'EUR' }}</p>
+
+      <div class="col d-flex justify-content-center mb-4">
+        <div
+          class="card shadow-sm border-1 bg-dark border border-white"
+          style="width: 18rem"
+        >
+          <img class="card-img-top" [src]="val.image" alt="{{ val.name }}" />
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <div class="p-1">
+                <h5 class="card-title text-white">{{ val.name }}</h5>
+              </div>
+              <div>
+                <p
+                  class="card-text p-1 text-white border bg-success rounded-pill"
+                >
+                  {{ val.price | currency : "EUR" }}
+                </p>
+              </div>
+            </div>
+            <hr class="text-white" />
+            <!-- btn to details and add to Cart -->
+            <div class="d-flex flex-column gap-3">
               <div *ngIf="val.available; else notAvailable">
-                <a class="btn btn-primary" routerLink="/details/{{ i }}">
+                <!-- btn/link details -->
+                <a
+                  class="btn btn-warning w-100 border border-white"
+                  routerLink="/details/{{ i }}"
+                >
                   <i class="fas fa-info-circle"></i> Details
                 </a>
               </div>
               <ng-template #notAvailable>
                 <p class="text-danger">Not Available</p>
               </ng-template>
+
+              <!-- btn add to cart with the method -->
+              <button
+                type="button"
+                class="btn btn-success border"
+                (click)="addToCart(products[i])"
+              >
+                Add to Cart
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
             </div>
           </div>
         </div>
+      </div>
       }
     </div>
   </div>
 </section>
-
-

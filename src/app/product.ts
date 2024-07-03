@@ -2,8 +2,8 @@ import { IProducts } from "./iproducts";
 
 export let products: IProducts[] = [
   {
-    image: "https://cdn.pixabay.com/photo/2016/06/09/15/58/sunset-1446018_1280.jpg",
-    name: "Sunset Over the Ocean",
+    image: "./images/Sunset.jpg",
+    name: "Sunset",
     price: 150.00,
     quantity: 1,
     artist: "John Doe",
@@ -11,7 +11,7 @@ export let products: IProducts[] = [
     available: true
   },
   {
-    image: "https://cdn.pixabay.com/photo/2016/06/09/15/58/sunset-1446018_1280.jpg",
+    image: "./images/MistyForest.jpg",
     name: "Misty Forest",
     price: 200.00,
     quantity: 1,
@@ -20,7 +20,7 @@ export let products: IProducts[] = [
     available: true
   },
   {
-    image: "https://cdn.pixabay.com/photo/2016/06/09/15/58/sunset-1446018_1280.jpg",
+    image: "./images/Mountain Peaks.jpg",
     name: "Mountain Peaks",
     price: 180.00,
     quantity: 1,
@@ -29,7 +29,7 @@ export let products: IProducts[] = [
     available: true
   },
   {
-    image: "https://cdn.pixabay.com/photo/2016/06/09/15/58/sunset-1446018_1280.jpg",
+    image: "./images/City Lights.jpg",
     name: "City Lights",
     price: 250.00,
     quantity: 1,
@@ -38,7 +38,7 @@ export let products: IProducts[] = [
     available: true
   },
   {
-    image: "https://cdn.pixabay.com/photo/2016/06/09/15/58/sunset-1446018_1280.jpg",
+    image: "./images/Desert Dunes.webp",
     name: "Desert Dunes",
     price: 170.00,
     quantity: 1,
@@ -47,7 +47,7 @@ export let products: IProducts[] = [
     available: true
   },
   {
-    image: "https://cdn.pixabay.com/photo/2016/06/09/15/58/sunset-1446018_1280.jpg",
+    image: "./images/Waterfall.jpg",
     name: "Waterfall",
     price: 190.00,
     quantity: 1,
@@ -56,7 +56,7 @@ export let products: IProducts[] = [
     available: true
   },
   {
-    image: "https://cdn.pixabay.com/photo/2016/06/09/15/58/sunset-1446018_1280.jpg",
+    image: "./images/Lake Reflections.jpg",
     name: "Lake Reflections",
     price: 160.00,
     quantity: 1,
@@ -65,7 +65,7 @@ export let products: IProducts[] = [
     available: true
   },
   {
-    image: "https://cdn.pixabay.com/photo/2016/06/09/15/58/sunset-1446018_1280.jpg",
+    image: "./images/Blooming Flower.avif",
     name: "Blooming Flower",
     price: 120.00,
     quantity: 1,
@@ -74,7 +74,7 @@ export let products: IProducts[] = [
     available: true
   },
   {
-    image: "https://cdn.pixabay.com/photo/2016/06/09/15/58/sunset-1446018_1280.jpg",
+    image: "./images/Forest Path.jpg",
     name: "Forest Path",
     price: 140.00,
     quantity: 1,
@@ -83,7 +83,7 @@ export let products: IProducts[] = [
     available: true
   },
   {
-    image: "https://cdn.pixabay.com/photo/2016/06/09/15/58/sunset-1446018_1280.jpg",
+    image: "./images/Beach Paradise.jpg",
     name: "Beach Paradise",
     price: 210.00,
     quantity: 1,

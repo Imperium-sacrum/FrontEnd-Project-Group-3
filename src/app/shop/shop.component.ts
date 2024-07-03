@@ -1,6 +1,8 @@
+import { ActivatedRoute } from '@angular/router';
 import { IProducts } from '../iproducts';
 import { products } from './../product';
 import { Component } from '@angular/core';
+import { CartService } from '../service/cart.service';
 
 @Component({
   selector: 'app-shop',
@@ -8,5 +10,20 @@ import { Component } from '@angular/core';
   styleUrl: './shop.component.css'
 })
 export class ShopComponent {
-  products: IProducts[] = products;
-}
+  products:IProducts[] = products;
+  product:IProducts={} as IProducts;
+ 
+ constructor(private CS:CartService,private route:ActivatedRoute){}
+ 
+ ngOnInit(): void {
+ 
+ }
+ 
+  addToCart(producto:IProducts){
+   this.CS.addToCart(producto)
+ }
+ addToCard2(producto:any){
+   this.CS.addToCart(producto);
+   
+ }
+ }
