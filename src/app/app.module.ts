@@ -15,6 +15,10 @@ import { Portafolio2Component } from './portafolio-2/portafolio-2.component';
 import { Portafolio3Component } from './portafolio-3/portafolio-3.component';
 import { ModalComponent } from './modal/modal.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ShopComponent } from './shop/shop.component';
+import { DetailsComponent } from './details/details.component';
+import { CartBadgeComponent } from './cart-badge/cart-badge.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +34,11 @@ import { ReactiveFormsModule } from '@angular/forms';
     Portafolio1Component,
     Portafolio2Component,
     Portafolio3Component,
-    ModalComponent
+    ModalComponent,
+    ShopComponent,
+    DetailsComponent,
+    CartBadgeComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
