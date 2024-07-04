@@ -84,10 +84,10 @@ export let products: IProducts[] = [
   },
   {
     image: "./images/Beach Paradise.jpg",
-    name: "Dschambulat",
+    name: "Beach Paradise",
     price: 210.00,
     quantity: 1,
-    artist: "Jane Smith",
+    artist: "Dschambulat",
     description: "A pristine beach with crystal clear water.",
     available: true
   }
