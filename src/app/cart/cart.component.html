@@ -1,32 +1,32 @@
-<div class="container">
-  <table class="table table-bordered table-hover my-5">
-    <thead class="thead-dark">
+<div class="cart-container">
+  <table class="cart-table">
+    <thead>
       <tr>
-        <th scope="col">Image</th>
-        <th scope="col">Product Name</th>
-        <th scope="col">Artist</th>
-        <th scope="col">Quantity</th>
-        <th scope="col">Price</th>
-        <th scope="col">Total</th>
-        <th scope="col">Actions</th>
+        <th>Image</th>
+        <th>Product Name</th>
+        <th>Artist</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Total</th>
+        <th>Actions</th>
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let item of cartItems">
-        <td class="align-middle"><img height="80px" [src]="item.image" alt="{{ item.name }}"></td>
-        <td class="align-middle">{{ item.name }}</td>
-        <td class="align-middle">{{ item.artist }}</td>
-        <td class="align-middle">{{ item.quantity }}</td>
-        <td class="align-middle">{{ item.price | currency:'EUR' }}</td>
-        <td class="align-middle">{{ item.quantity * item.price | currency:'EUR' }}</td>
-        <td class="align-middle">
-          <button (click)="onDecreaseQtty(item)" class="btn btn-sm btn-warning">
+        <td><img height="80px" [src]="item.image" alt="{{ item.name }}"></td>
+        <td>{{ item.name }}</td>
+        <td>{{ item.artist }}</td>
+        <td>{{ item.quantity }}</td>
+        <td>{{ item.price | currency:'EUR' }}</td>
+        <td>{{ item.quantity * item.price | currency:'EUR' }}</td>
+        <td>
+          <button (click)="onDecreaseQtty(item)" class="btn-decrease">
             <i class="fas fa-minus"></i>
           </button>
-          <button (click)="onDelete(item)" class="btn btn-sm btn-danger">
+          <button (click)="onDelete(item)" class="btn-delete">
             <i class="fas fa-trash"></i>
           </button>
-          <button (click)="onIncreaseQtty(item)" class="btn btn-sm btn-success">
+          <button (click)="onIncreaseQtty(item)" class="btn-increase">
             <i class="fas fa-plus"></i>
           </button>
         </td>
@@ -52,4 +52,3 @@
     </tfoot>
   </table>
 </div>
-
