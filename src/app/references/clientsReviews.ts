@@ -3,27 +3,30 @@ import { modelReviews } from "./modelReviews";
 export const clientReviews: modelReviews[] = [{
     client:"Serri",
     notclient:true,
-    date:"02.07.2024",
+    date:"2024-02-01",
     location:"Germany",
-    reviews:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nostrum voluptatem veniam commodi! Perspiciatis rerum cupiditate dicta, aut officia voluptate sunt excepturi quia fuga fugit exercitationem similique, nostrum tempora id.",
-    img:"Serri.png"
-    },
+    reviews:"I am very happy with the services received, for this photographer, she has been very punctual and hardworking with the requested photos. I highly recommend her and her work.",
+    img:"Serri.png",
+ 
+},
 {
     client:"Dusan",
     notclient:true,
-    date:"01.07.2023",
+    date:"2024-02-02",
     location:"Austria",
-    reviews:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nostrum voluptatem veniam commodi! Perspiciatis rerum cupiditate dicta, aut officia voluptate sunt excepturi quia fuga fugit exercitationem similique, nostrum tempora id.",
-    img:"Dusan.png"
+    reviews:"Very happy with the results delivered by this photographer, I hope to continue working with her on more photography projects that I have planned. recommended 10/10.",
+    img:"Dusan.png",
+    
     
  },
  {
     client:"Alberto Columbus",
     notclient:false,
-    date:"03.06.2024",
+    date:"2024-02-03",
     location:"Colombia",
-    reviews:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nostrum voluptatem veniam commodi! Perspiciatis rerum cupiditate dicta, aut officia voluptate sunt excepturi quia fuga fugit exercitationem similique, nostrum tempora id.",
-    img:"user.jpg"
+    reviews:"Muy sorprendido y enamorada de las fotos tomadas por esta fotógrafa, la sigo desde hace mucho tiempo y no deja de sorprenderme el trabajo y dedicación que hace esta fotógrafa. Espero que sigas con tu gran trabajo y tengas todo mi apoyo.",
+    img:"user.jpg",
+   
     
  }
 ]

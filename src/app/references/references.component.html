@@ -300,7 +300,8 @@
                 <p class="fw-light mb-4 pb-2">
                   Latest Comments section by users and Clients
                 </p>
-                @for (val of commentsReferences ; track $index) {
+                @for (val of commentsReferences ; track $index; let i = $index)
+                {
                 <div class="d-flex flex-start py-2">
                   <!-- images of the client or User -->
                   <img
@@ -315,7 +316,7 @@
                     <h6 class="fw-bold mb-1">{{ val.client }}</h6>
                     <div class="d-flex align-items-center mb-3">
                       <p class="mb-0">
-                        Date: {{ val.date }}
+                        Date: {{ val.date | date }}
                         @if (val.notclient == true) {
                         <span class="badge bg-primary">Client</span>} @else {
                         <span class="badge bg-primary">User</span>}
