@@ -1,3 +1,7 @@
+/* fonts */
+/* # Bebas Neue */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 .navbar {
   /* background-image: url('/images/camera.png'); */
   background-size: cover;
@@ -15,6 +19,19 @@
   margin-left: 50px;
   padding-top: 12px;
   padding-bottom: 12px;
+}
+
+.navbar-brand {
+  padding-left: 2.5rem;
+}
+
+.logo {
+  width: 4rem;
+}
+
+.logo-text {
+  color: #fff;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .cam {
