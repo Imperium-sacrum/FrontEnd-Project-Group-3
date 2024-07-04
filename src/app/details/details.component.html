@@ -2,21 +2,24 @@
   <div class="row justify-content-center">
     <div class="col-md-8">
       <div class="card border-1 border-warning">
-        <img [src]="item.image" class="card-img-top" alt="{{ item.name }}">
+        <img [src]="item.image" class="card-img-top" alt="{{ item.name }}" />
         <div class="card-body">
-          <h5 class="card-title text-warning text-center">{{ item.name | uppercase }}</h5>
-          <p class="card-text">Price : {{ item.price | currency:"EUR" }}</p>
-          <hr>
+          <h5 class="card-title text-warning text-center">
+            {{ item.name | uppercase }}
+          </h5>
+          <p class="card-text">Price : {{ item.price | currency : "EUR" }}</p>
+          <hr />
           <p class="card-text">Artist : {{ item.artist }}</p>
-          <hr>
+          <hr />
           <p class="card-text">{{ item.description }}</p>
           <button class="btn btn-warning" (click)="addToCart()">
             <i class="fas fa-cart-plus"></i> Add to Cart
           </button>
+          <a routerLink="/shop" class="btn btn-primary mx-4"
+            >Back to image gallery</a
+          >
         </div>
       </div>
     </div>
   </div>
 </div>
-
-
