@@ -6,7 +6,7 @@ export let products: IProducts[] = [
     name: "Sunset",
     price: 150.00,
     quantity: 1,
-    artist: "John Doe",
+    artist: "Albert",
     description: "A beautiful sunset over the ocean with vibrant colors.",
     available: true
   },
@@ -15,7 +15,7 @@ export let products: IProducts[] = [
     name: "Misty Forest",
     price: 200.00,
     quantity: 1,
-    artist: "Jane Smith",
+    artist: "Navid",
     description: "A mystical forest covered in morning mist.",
     available: true
   },
@@ -24,7 +24,7 @@ export let products: IProducts[] = [
     name: "Mountain Peaks",
     price: 180.00,
     quantity: 1,
-    artist: "John Doe",
+    artist: "Joshua",
     description: "Snow-covered mountain peaks under a clear blue sky.",
     available: true
   },
@@ -33,7 +33,7 @@ export let products: IProducts[] = [
     name: "City Lights",
     price: 250.00,
     quantity: 1,
-    artist: "Emily Clark",
+    artist: "Julius",
     description: "A bustling city at night with vibrant lights.",
     available: true
   },
@@ -42,7 +42,7 @@ export let products: IProducts[] = [
     name: "Desert Dunes",
     price: 170.00,
     quantity: 1,
-    artist: "Michael Brown",
+    artist: "Dschambulat",
     description: "Golden sand dunes in the desert at sunset.",
     available: true
   },
@@ -51,7 +51,7 @@ export let products: IProducts[] = [
     name: "Waterfall",
     price: 190.00,
     quantity: 1,
-    artist: "Jane Smith",
+    artist: "Joshua",
     description: "A stunning waterfall in a lush green forest.",
     available: true
   },
@@ -60,7 +60,7 @@ export let products: IProducts[] = [
     name: "Lake Reflections",
     price: 160.00,
     quantity: 1,
-    artist: "John Doe",
+    artist: "Dschambulat",
     description: "A serene lake with mountains reflected in the water.",
     available: true
   },
@@ -69,7 +69,7 @@ export let products: IProducts[] = [
     name: "Blooming Flower",
     price: 120.00,
     quantity: 1,
-    artist: "Emily Clark",
+    artist: "Dschambulat",
     description: "A close-up of a blooming flower with vibrant colors.",
     available: true
   },
@@ -78,13 +78,13 @@ export let products: IProducts[] = [
     name: "Forest Path",
     price: 140.00,
     quantity: 1,
-    artist: "Michael Brown",
+    artist: "Albert",
     description: "A tranquil path through a dense forest.",
     available: true
   },
   {
     image: "./images/Beach Paradise.jpg",
-    name: "Beach Paradise",
+    name: "Dschambulat",
     price: 210.00,
     quantity: 1,
     artist: "Jane Smith",
