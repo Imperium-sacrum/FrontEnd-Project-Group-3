@@ -13,13 +13,13 @@ import Swal from 'sweetalert2';
 export class ShopComponent {
   products:IProducts[] = products;
   product:IProducts={} as IProducts;
- 
+
  constructor(private CS:CartService,private route:ActivatedRoute){}
- 
+
  ngOnInit(): void {
- 
+
  }
- 
+
   addToCart(producto:IProducts){
    this.CS.addToCart(producto)
    Swal.fire({
@@ -31,4 +31,4 @@ export class ShopComponent {
   });
   }
  }
- 
+
